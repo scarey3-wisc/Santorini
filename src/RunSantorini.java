@@ -42,7 +42,7 @@ public class RunSantorini{
 		Agent na = new Watson(gamePanel); 
 		Agent eu = new Euclid(3000);
 		
-		SantoriniGame myGame = new SantoriniGame(new Agent[] {eu, na}, gamePanel, text);
+		SantoriniGame myGame = new SantoriniGame(new Agent[] {na, eu}, gamePanel, text);
 		myGame.createDefaultGame();
 		myGame.render(null);
 		myGame.notifyOfTurnStart();

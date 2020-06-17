@@ -164,11 +164,11 @@ public class SantoriniGame {
 	public void notifyOfTurnStart() {
 		players[currentAgent].startTurn();
 		if(currentAgent == 0) {
-			text.setText("Player One is Thinking");
+			text.setText("Player One (Grey) is Thinking");
 		}else if(currentAgent == 1) {
-			text.setText("Player Two is Thinking");
+			text.setText("Player Two (Green) is Thinking");
 		}else if(currentAgent == 2) {
-			text.setText("Player Three is Thinking");
+			text.setText("Player Three (Red) is Thinking");
 		}
 		render(null);
 	}
